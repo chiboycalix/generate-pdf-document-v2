@@ -21,7 +21,7 @@ func main() {
 
 	pdf.SetStrokeColor(204, 204, 204)
 	pdf.SetLineWidth(1)
-	pdf.Line(constants.FirstColumnWidth, constants.TopMargin, constants.FirstColumnWidth, constants.VerticalLineHeight)
+	pdf.Line(constants.LeftContentWidth, constants.TopMargin, constants.LeftContentWidth, constants.VerticalLineHeight)
 
 	pdf.WritePdf("output/resume.pdf")
 

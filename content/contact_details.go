@@ -2,6 +2,7 @@ package content
 
 import (
 	"github.com/chiboycalix/html-to-pdf/constants"
+	"github.com/chiboycalix/html-to-pdf/utils"
 	"github.com/signintech/gopdf"
 )
 
@@ -13,7 +14,7 @@ func ContactDetails(pdf *gopdf.GoPdf) {
 }
 
 func Email(pdf *gopdf.GoPdf) {
-	LoadIcons(pdf, "images/logos/mail.png", constants.LeftMargin, StartOfContactDetails, IconWidth, IconHeight)
+	utils.LoadImage(pdf, "images/logos/mail.png", constants.LeftMargin, StartOfContactSection, IconWidth, IconHeight)
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, StartOfEmailAddress+50)
 	pdf.SetFontSize(constants.Paragraph)
@@ -28,7 +29,7 @@ func Email(pdf *gopdf.GoPdf) {
 }
 
 func Website(pdf *gopdf.GoPdf) {
-	LoadIcons(pdf, "images/logos/links.png", constants.LeftMargin, StartOfWebsite, IconWidth, IconHeight)
+	utils.LoadImage(pdf, "images/logos/links.png", constants.LeftMargin, StartOfWebsite, IconWidth, IconHeight)
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, StartOfWebsite+50)
 	pdf.SetTextColor(204, 204, 204)
@@ -40,7 +41,7 @@ func Website(pdf *gopdf.GoPdf) {
 }
 
 func PhoneNumber(pdf *gopdf.GoPdf) {
-	LoadIcons(pdf, "images/logos/phone.png", constants.LeftMargin, StartOfPhoneNumber, IconWidth, IconHeight)
+	utils.LoadImage(pdf, "images/logos/phone.png", constants.LeftMargin, StartOfPhoneNumber, IconWidth, IconHeight)
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, StartOfPhoneNumber+50)
 	pdf.SetFontSize(constants.Paragraph)
@@ -53,7 +54,7 @@ func PhoneNumber(pdf *gopdf.GoPdf) {
 }
 
 func CurrentLocation(pdf *gopdf.GoPdf) {
-	LoadIcons(pdf, "images/logos/location.png", constants.LeftMargin, StartOfCurrentLocation, IconWidth, IconHeight)
+	utils.LoadImage(pdf, "images/logos/location.png", constants.LeftMargin, StartOfCurrentLocation, IconWidth, IconHeight)
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, StartOfCurrentLocation+50)
 	pdf.SetFontSize(constants.Paragraph)

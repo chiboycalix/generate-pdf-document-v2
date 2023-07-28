@@ -9,8 +9,10 @@ const StartOfProfilePicture = constants.TopMargin
 const StartOfFullName = StartOfProfilePicture + constants.ProfilePictureHeight + constants.VerticalSpace
 const StartOfJobTitle = StartOfFullName + constants.VerticalSpace
 const StartOfFirstHorizontalDivider = StartOfJobTitle + constants.VerticalSpace
-const StartOfContactDetails = StartOfFirstHorizontalDivider + constants.VerticalSpace
-const StartOfEmailAddress = StartOfContactDetails + 20
+
+// Contact Section
+const StartOfContactSection = StartOfFirstHorizontalDivider + constants.VerticalSpace
+const StartOfEmailAddress = StartOfContactSection + 20
 const EndOfEmailAddress = StartOfEmailAddress + 120
 const StartOfWebsite = EndOfEmailAddress + constants.VerticalSpace*2
 const EndOfWebsite = StartOfWebsite + 120
@@ -19,6 +21,7 @@ const EndOfPhoneNumber = StartOfPhoneNumber + 120
 const StartOfCurrentLocation = EndOfPhoneNumber + constants.VerticalSpace*2
 const EndOfCurrentLocation = StartOfCurrentLocation + 120
 
+// Socials Section
 const StartOfSocialsSection = EndOfCurrentLocation + constants.VerticalSpace*3
 const StartOfGithub = StartOfSocialsSection + 180
 const EndOfGithub = StartOfGithub + 120
@@ -27,6 +30,7 @@ const EndOfLinkedin = StartOfLinkedin + 120
 const StartOfTwitter = EndOfLinkedin + constants.VerticalSpace*2
 const EndOfTwitter = StartOfTwitter + 120
 
+// Language Section
 const StartOfLanguageSection = EndOfTwitter + constants.VerticalSpace*3
 
 const StartOfEnglishY = StartOfLanguageSection + 180
@@ -38,9 +42,6 @@ const StartOfIgboX = constants.LeftMargin + constants.HorizontalSpace*1.3
 const StartOfIgboY = EndOfEnglishY + constants.VerticalSpace*2
 const EndOfIgboX = constants.LeftMargin + constants.HorizontalSpace*1.3
 const EndOfIgboY = StartOfIgboY + constants.HorizontalSpace/1.1
-
-// const StartOfGerman = EndOfIgboY + constants.VerticalSpace*2
-// const EndOfGerman = StartOfGerman + constants.HorizontalSpace/1.1
 
 const StartOfGermanX = constants.LeftMargin + constants.HorizontalSpace*1.3
 const StartOfGermanY = EndOfIgboY + constants.VerticalSpace*2
@@ -65,11 +66,12 @@ func LeftContent(pdf *gopdf.GoPdf) {
 func HorizontalDivider(pdf *gopdf.GoPdf, top float64) {
 	pdf.SetStrokeColor(204, 204, 204)
 	pdf.SetLineWidth(1)
-	pdf.Line(constants.LeftMargin, top, constants.FirstColumnWidth-constants.RightMargin, top)
+	pdf.Line(constants.LeftMargin, top, constants.LeftContentWidth-constants.RightMargin, top)
 }
-func LoadIcons(pdf *gopdf.GoPdf, iconPath string, leftMargin float64, topMargin float64, width float64, height float64) {
-	pdf.Image(iconPath, leftMargin, topMargin, &gopdf.Rect{
-		W: width,
-		H: height,
-	})
-}
+
+// func LoadIcons(pdf *gopdf.GoPdf, iconPath string, leftMargin float64, topMargin float64, width float64, height float64) {
+// 	pdf.Image(iconPath, leftMargin, topMargin, &gopdf.Rect{
+// 		W: width,
+// 		H: height,
+// 	})
+// }

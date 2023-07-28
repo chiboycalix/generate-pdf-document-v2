@@ -2,6 +2,7 @@ package content
 
 import (
 	"github.com/chiboycalix/html-to-pdf/constants"
+	"github.com/chiboycalix/html-to-pdf/utils"
 	"github.com/signintech/gopdf"
 )
 
@@ -14,7 +15,7 @@ func Language(pdf *gopdf.GoPdf) {
 }
 
 func UnitedKingdom(pdf *gopdf.GoPdf) {
-	LoadIcons(pdf, "images/languages/britain.png", constants.LeftMargin, StartOfEnglishY, IconWidth, IconHeight)
+	utils.LoadImage(pdf, "images/languages/britain.png", constants.LeftMargin, StartOfEnglishY, IconWidth, IconHeight)
 
 	pdf.SetXY(StartOfEnglishX, StartOfEnglishY+50)
 	pdf.SetFontSize(constants.Paragraph)
@@ -27,7 +28,7 @@ func UnitedKingdom(pdf *gopdf.GoPdf) {
 }
 
 func Nigeria(pdf *gopdf.GoPdf) {
-	LoadIcons(pdf, "images/languages/nigeria.png", constants.LeftMargin, StartOfIgboY, IconWidth, IconHeight)
+	utils.LoadImage(pdf, "images/languages/nigeria.png", constants.LeftMargin, StartOfIgboY, IconWidth, IconHeight)
 
 	pdf.SetXY(StartOfIgboX, StartOfIgboY+50)
 	pdf.SetFontSize(constants.Paragraph)
@@ -40,7 +41,7 @@ func Nigeria(pdf *gopdf.GoPdf) {
 }
 
 func Germany(pdf *gopdf.GoPdf) {
-	LoadIcons(pdf, "images/languages/germany.png", constants.LeftMargin, StartOfGermanY, IconWidth, IconHeight)
+	utils.LoadImage(pdf, "images/languages/germany.png", constants.LeftMargin, StartOfGermanY, IconWidth, IconHeight)
 
 	pdf.SetXY(StartOfGermanX, StartOfGermanY+50)
 	pdf.SetFontSize(constants.Paragraph)

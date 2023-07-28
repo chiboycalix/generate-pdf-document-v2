@@ -1,8 +1,8 @@
 package constants
 
+const PageWidth = 8000.00
 const PageHeight = 8000.00
-const PageWidth = 7000.00
-const FirstColumnWidth = 2000
+const LeftContentWidth = 2000
 const LeftMargin = 200.00
 const RightMargin = 200.00
 const TopMargin = 200.00
@@ -16,3 +16,6 @@ const HorizontalSpace = 200.00
 const HeaderOne = 150
 const HeaderTwo = 120
 const Paragraph = 90
+
+const SmallImageWidth = 80
+const SmallImageHeight = 80
