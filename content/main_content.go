@@ -9,10 +9,12 @@ const StartOfExperienceSection = constants.TopMargin * 1.5
 const MainContentMarginLeft = constants.LeftContentWidth * 1.1
 
 const StartOfLatestProjectsSection = constants.TopMargin * 15
+const StartOfSkillSection = constants.TopMargin * 25.5
 const DotIconHeight = 80
 const DotIconWidth = 80
 
 func MainContent(pdf *gopdf.GoPdf) {
 	Experience(pdf)
 	LatestProjects(pdf)
+	Skills(pdf)
 }

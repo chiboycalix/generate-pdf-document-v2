@@ -19,15 +19,6 @@ func Experience(pdf *gopdf.GoPdf) {
 
 	// NIBSS
 	NIBSS(pdf)
-	// LoadIcons(pdf, "images/logos/nibbs_logo.png", constants.LeftContentWidth+constants.LeftMargin, StartOfContactSection+(ContactRowHeight*5.5), 280, 70)
-	// LoadIcons(pdf, "images/logos/sclogo.png", constants.LeftContentWidth+constants.LeftMargin, StartOfContactSection+(ContactRowHeight*6.5), 600, 80)
-	// LoadIcons(pdf, "images/logos/bongalow.png", constants.LeftContentWidth+constants.LeftMargin, StartOfContactSection+(ContactRowHeight*7.5), 600, 80)
-
-	// pdf.SetLineWidth(50)
-	// pdf.SetStrokeColor(255, 0, 0)
-	// pdf.SetFillColor(255, 0, 0)
-	// pdf.Oval(constants.LeftContentWidth+constants.LeftMargin, 900, 900, 950)
-	// pdf.Oval(constants.LeftContentWidth+constants.LeftMargin, 250, constants.LeftContentWidth+constants.LeftMargin+250, 300)
 }
 
 func SecondCompany(pdf *gopdf.GoPdf) {
