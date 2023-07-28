@@ -13,7 +13,7 @@ func LoadFonts(pdf *gopdf.GoPdf) {
 		return
 	}
 
-	err = pdf.SetFont("Outfit-Regular", "", 40)
+	err = pdf.SetFont("Outfit-Regular", "", 0)
 	if err != nil {
 		log.Print(err.Error())
 		return

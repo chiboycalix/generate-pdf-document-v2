@@ -9,7 +9,10 @@ import (
 
 func main() {
 	pdf := gopdf.GoPdf{}
-	pdf.Start(gopdf.Config{PageSize: *gopdf.PageSizeA0}) //595.28, 841.89 = A4
+	pdf.Start(gopdf.Config{PageSize: gopdf.Rect{
+		W: constants.PageWidth,
+		H: constants.PageHeight,
+	}})
 	pdf.AddPage()
 	utils.LoadFonts(&pdf)
 

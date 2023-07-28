@@ -13,53 +13,54 @@ func ContactDetails(pdf *gopdf.GoPdf) {
 }
 
 func Email(pdf *gopdf.GoPdf) {
-	pdf.SetXY(constants.LeftMargin, StartOfContactDetails)
-	LoadIcons(pdf, "images/logos/mail.png", constants.LeftMargin, StartOfContactDetails, 80, 70)
-	pdf.SetXY(constants.LeftMargin+constants.Hundred+50, FirstContactDetailsFirstValueRowHeight)
-	pdf.SetFontSize(35)
-	pdf.SetTextColor(204, 204, 204)
+	LoadIcons(pdf, "images/logos/mail.png", constants.LeftMargin, StartOfContactDetails, IconWidth, IconHeight)
 
+	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, StartOfEmailAddress+50)
+	pdf.SetFontSize(constants.Paragraph)
+	pdf.SetTextColor(204, 204, 204)
+	// pdf.SetTextColor(121, 129, 154)
 	pdf.Text("Email")
 
-	pdf.SetXY(constants.LeftMargin+constants.Hundred+50, FirstContactDetailsSecondValueRowHeight)
-	pdf.SetTextColor(0, 0, 0)
+	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, EndOfEmailAddress+constants.HorizontalSpace/3)
+	pdf.SetTextColor(71, 81, 107)
 	pdf.Text("Igwechinonso77@gmail.com")
+
 }
 
 func Website(pdf *gopdf.GoPdf) {
-	pdf.SetXY(constants.LeftMargin, StartOfContactDetails)
-	LoadIcons(pdf, "images/logos/links.png", constants.LeftMargin, StartOfContactDetails+ContactRowHeight, 80, 70)
-	pdf.SetXY(constants.LeftMargin+constants.Hundred+50, FirstContactDetailsFirstValueRowHeight+constants.HundredAndFifty)
-	pdf.SetFontSize(35)
+	LoadIcons(pdf, "images/logos/links.png", constants.LeftMargin, StartOfWebsite, IconWidth, IconHeight)
 
+	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, StartOfWebsite+50)
 	pdf.SetTextColor(204, 204, 204)
 	pdf.Text("Website")
 
-	pdf.SetXY(constants.LeftMargin+constants.Hundred+50, FirstContactDetailsSecondValueRowHeight+constants.HundredAndFifty)
+	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, EndOfWebsite+constants.HorizontalSpace/3)
 	pdf.SetTextColor(0, 0, 0)
 	pdf.Text("https://www.google.com")
 }
 
 func PhoneNumber(pdf *gopdf.GoPdf) {
-	pdf.SetXY(constants.LeftMargin, StartOfContactDetails)
-	LoadIcons(pdf, "images/logos/phone.png", constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*2), 80, 70)
-	pdf.SetXY(constants.LeftMargin+constants.Hundred+50, FirstContactDetailsFirstValueRowHeight+2*constants.HundredAndFifty)
-	pdf.SetFontSize(35)
+	LoadIcons(pdf, "images/logos/phone.png", constants.LeftMargin, StartOfPhoneNumber, IconWidth, IconHeight)
+
+	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, StartOfPhoneNumber+50)
+	pdf.SetFontSize(constants.Paragraph)
 	pdf.SetTextColor(204, 204, 204)
 	pdf.Text("Phone")
-	pdf.SetXY(constants.LeftMargin+constants.Hundred+50, FirstContactDetailsSecondValueRowHeight+2*constants.HundredAndFifty)
+
+	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, EndOfPhoneNumber+constants.HorizontalSpace/3)
 	pdf.SetTextColor(0, 0, 0)
 	pdf.Text("(+234) 816 584 2442")
 }
 
 func CurrentLocation(pdf *gopdf.GoPdf) {
-	pdf.SetXY(constants.LeftMargin, StartOfContactDetails)
-	LoadIcons(pdf, "images/logos/location.png", constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*3), 80, 70)
-	pdf.SetXY(constants.LeftMargin+constants.Hundred+50, FirstContactDetailsFirstValueRowHeight+3*constants.HundredAndFifty)
-	pdf.SetFontSize(35)
+	LoadIcons(pdf, "images/logos/location.png", constants.LeftMargin, StartOfCurrentLocation, IconWidth, IconHeight)
+
+	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, StartOfCurrentLocation+50)
+	pdf.SetFontSize(constants.Paragraph)
 	pdf.SetTextColor(204, 204, 204)
 	pdf.Text("Location")
-	pdf.SetXY(constants.LeftMargin+constants.Hundred+50, FirstContactDetailsSecondValueRowHeight+3*constants.HundredAndFifty)
+
+	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, EndOfCurrentLocation+constants.HorizontalSpace/3)
 	pdf.SetTextColor(0, 0, 0)
 	pdf.Text("Lagos, Nigeria")
 }

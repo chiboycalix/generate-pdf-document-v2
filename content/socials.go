@@ -6,7 +6,7 @@ import (
 )
 
 func Socials(pdf *gopdf.GoPdf) {
-	pdf.SetXY(constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*5))
+	pdf.SetXY(constants.LeftMargin, StartOfSocialsSection)
 	pdf.Text("Socials")
 	Github(pdf)
 	Linkedin(pdf)
@@ -14,43 +14,41 @@ func Socials(pdf *gopdf.GoPdf) {
 }
 
 func Github(pdf *gopdf.GoPdf) {
-	pdf.SetXY(constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*5.5))
-	LoadIcons(pdf, "images/socials/github.png", constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*5.5), 80, 70)
-	pdf.SetXY(constants.LeftMargin+constants.Hundred+50, FirstContactDetailsFirstValueRowHeight+5.5*constants.HundredAndFifty)
-	pdf.SetFontSize(35)
+	LoadIcons(pdf, "images/socials/github.png", constants.LeftMargin, StartOfGithub, IconWidth, IconHeight)
+
+	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, StartOfGithub+50)
+	pdf.SetFontSize(constants.Paragraph)
 	pdf.SetTextColor(204, 204, 204)
 
 	pdf.Text("GitHub")
 
-	pdf.SetXY(constants.LeftMargin+constants.Hundred+50, FirstContactDetailsSecondValueRowHeight+5.5*constants.HundredAndFifty)
+	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, EndOfGithub+constants.HorizontalSpace/3)
 	pdf.SetTextColor(0, 0, 0)
 	pdf.Text("@chiboycalix")
 }
 
 func Linkedin(pdf *gopdf.GoPdf) {
-	pdf.SetXY(constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*6.5))
-	LoadIcons(pdf, "images/socials/linkedin.png", constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*6.5), 80, 70)
-	pdf.SetXY(constants.LeftMargin+constants.Hundred+50, FirstContactDetailsFirstValueRowHeight+6.5*constants.HundredAndFifty)
-	pdf.SetFontSize(35)
-	pdf.SetTextColor(204, 204, 204)
+	LoadIcons(pdf, "images/socials/linkedin.png", constants.LeftMargin, StartOfLinkedin, IconWidth, IconHeight)
 
+	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, StartOfLinkedin+50)
+	pdf.SetFontSize(constants.Paragraph)
+	pdf.SetTextColor(204, 204, 204)
 	pdf.Text("Linkedin")
 
-	pdf.SetXY(constants.LeftMargin+constants.Hundred+50, FirstContactDetailsSecondValueRowHeight+6.5*constants.HundredAndFifty)
+	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, EndOfLinkedin+constants.HorizontalSpace/3)
 	pdf.SetTextColor(0, 0, 0)
 	pdf.Text("igwe-chinonso/")
 }
 
 func Twitter(pdf *gopdf.GoPdf) {
-	pdf.SetXY(constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*7.5))
-	LoadIcons(pdf, "images/socials/twitter.png", constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*7.5), 80, 70)
-	pdf.SetXY(constants.LeftMargin+constants.Hundred+50, FirstContactDetailsFirstValueRowHeight+7.5*constants.HundredAndFifty)
-	pdf.SetFontSize(35)
-	pdf.SetTextColor(204, 204, 204)
+	LoadIcons(pdf, "images/socials/twitter.png", constants.LeftMargin, StartOfTwitter, IconWidth, IconHeight)
 
+	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, StartOfTwitter+50)
+	pdf.SetFontSize(constants.Paragraph)
+	pdf.SetTextColor(204, 204, 204)
 	pdf.Text("Twitter")
 
-	pdf.SetXY(constants.LeftMargin+constants.Hundred+50, FirstContactDetailsSecondValueRowHeight+7.5*constants.HundredAndFifty)
+	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, EndOfTwitter+constants.HorizontalSpace/3)
 	pdf.SetTextColor(0, 0, 0)
 	pdf.Text("@thorsgardian_")
 }

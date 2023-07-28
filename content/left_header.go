@@ -14,11 +14,11 @@ func ProfilePicture(pdf *gopdf.GoPdf) {
 
 func FullNameAndJobDescription(pdf *gopdf.GoPdf) {
 	pdf.SetXY(constants.LeftMargin, StartOfFullName)
-	pdf.SetFontSize(60)
+	pdf.SetFontSize(constants.HeaderOne)
 	pdf.Text("Igwe Chinonso")
 
-	pdf.SetXY(constants.LeftMargin, StartOfFullDescription)
-	pdf.SetFontSize(50)
+	pdf.SetXY(constants.LeftMargin, StartOfJobTitle)
+	pdf.SetFontSize(constants.HeaderTwo)
 	pdf.SetTextColor(164, 120, 232)
 	pdf.Text("Full-Stack Engineer")
 }
