@@ -14,6 +14,7 @@ func main() {
 	utils.LoadFonts(&pdf)
 
 	content.LeftContent(&pdf)
+	content.MainContent(&pdf)
 
 	pdf.SetStrokeColor(204, 204, 204)
 	pdf.SetLineWidth(1)

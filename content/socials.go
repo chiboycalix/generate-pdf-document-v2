@@ -15,7 +15,7 @@ func Socials(pdf *gopdf.GoPdf) {
 
 func Github(pdf *gopdf.GoPdf) {
 	pdf.SetXY(constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*5.5))
-	LoadIcons(pdf, "images/socials/github.png", constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*5.5))
+	LoadIcons(pdf, "images/socials/github.png", constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*5.5), 80, 70)
 	pdf.SetXY(constants.LeftMargin+constants.Hundred+50, FirstContactDetailsFirstValueRowHeight+5.5*constants.HundredAndFifty)
 	pdf.SetFontSize(35)
 	pdf.SetTextColor(204, 204, 204)
@@ -29,7 +29,7 @@ func Github(pdf *gopdf.GoPdf) {
 
 func Linkedin(pdf *gopdf.GoPdf) {
 	pdf.SetXY(constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*6.5))
-	LoadIcons(pdf, "images/socials/linkedin.png", constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*6.5))
+	LoadIcons(pdf, "images/socials/linkedin.png", constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*6.5), 80, 70)
 	pdf.SetXY(constants.LeftMargin+constants.Hundred+50, FirstContactDetailsFirstValueRowHeight+6.5*constants.HundredAndFifty)
 	pdf.SetFontSize(35)
 	pdf.SetTextColor(204, 204, 204)
@@ -43,7 +43,7 @@ func Linkedin(pdf *gopdf.GoPdf) {
 
 func Twitter(pdf *gopdf.GoPdf) {
 	pdf.SetXY(constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*7.5))
-	LoadIcons(pdf, "images/socials/twitter.png", constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*7.5))
+	LoadIcons(pdf, "images/socials/twitter.png", constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*7.5), 80, 70)
 	pdf.SetXY(constants.LeftMargin+constants.Hundred+50, FirstContactDetailsFirstValueRowHeight+7.5*constants.HundredAndFifty)
 	pdf.SetFontSize(35)
 	pdf.SetTextColor(204, 204, 204)

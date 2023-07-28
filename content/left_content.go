@@ -30,9 +30,9 @@ func HorizontalDivider(pdf *gopdf.GoPdf, top float64) {
 	pdf.SetLineWidth(1)
 	pdf.Line(constants.LeftMargin, top, constants.FirstColumnWidth-constants.RightMargin, top)
 }
-func LoadIcons(pdf *gopdf.GoPdf, iconPath string, leftMargin float64, topMargin float64) {
+func LoadIcons(pdf *gopdf.GoPdf, iconPath string, leftMargin float64, topMargin float64, width float64, height float64) {
 	pdf.Image(iconPath, leftMargin, topMargin, &gopdf.Rect{
-		W: 80,
-		H: 70,
+		W: width,
+		H: height,
 	})
 }

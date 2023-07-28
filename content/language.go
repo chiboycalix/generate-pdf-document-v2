@@ -15,7 +15,7 @@ func Language(pdf *gopdf.GoPdf) {
 
 func UnitedKingdom(pdf *gopdf.GoPdf) {
 	pdf.SetXY(constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*10))
-	LoadIcons(pdf, "images/languages/britain.png", constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*10))
+	LoadIcons(pdf, "images/languages/britain.png", constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*10), 80, 70)
 	pdf.SetXY(constants.LeftMargin+constants.Hundred+50, FirstContactDetailsFirstValueRowHeight+10*constants.HundredAndFifty)
 	pdf.SetFontSize(35)
 	pdf.SetTextColor(204, 204, 204)
@@ -29,7 +29,7 @@ func UnitedKingdom(pdf *gopdf.GoPdf) {
 
 func Nigeria(pdf *gopdf.GoPdf) {
 	pdf.SetXY(constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*11))
-	LoadIcons(pdf, "images/languages/nigeria.png", constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*11))
+	LoadIcons(pdf, "images/languages/nigeria.png", constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*11), 80, 70)
 	pdf.SetXY(constants.LeftMargin+constants.Hundred+50, FirstContactDetailsFirstValueRowHeight+11*constants.HundredAndFifty)
 	pdf.SetFontSize(35)
 	pdf.SetTextColor(204, 204, 204)
@@ -43,7 +43,7 @@ func Nigeria(pdf *gopdf.GoPdf) {
 
 func Germany(pdf *gopdf.GoPdf) {
 	pdf.SetXY(constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*12))
-	LoadIcons(pdf, "images/languages/germany.png", constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*12))
+	LoadIcons(pdf, "images/languages/germany.png", constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*12), 80, 70)
 	pdf.SetXY(constants.LeftMargin+constants.Hundred+50, FirstContactDetailsFirstValueRowHeight+12*constants.HundredAndFifty)
 	pdf.SetFontSize(35)
 	pdf.SetTextColor(204, 204, 204)

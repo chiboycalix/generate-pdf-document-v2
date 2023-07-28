@@ -14,7 +14,7 @@ func ContactDetails(pdf *gopdf.GoPdf) {
 
 func Email(pdf *gopdf.GoPdf) {
 	pdf.SetXY(constants.LeftMargin, StartOfContactDetails)
-	LoadIcons(pdf, "images/logos/mail.png", constants.LeftMargin, StartOfContactDetails)
+	LoadIcons(pdf, "images/logos/mail.png", constants.LeftMargin, StartOfContactDetails, 80, 70)
 	pdf.SetXY(constants.LeftMargin+constants.Hundred+50, FirstContactDetailsFirstValueRowHeight)
 	pdf.SetFontSize(35)
 	pdf.SetTextColor(204, 204, 204)
@@ -28,7 +28,7 @@ func Email(pdf *gopdf.GoPdf) {
 
 func Website(pdf *gopdf.GoPdf) {
 	pdf.SetXY(constants.LeftMargin, StartOfContactDetails)
-	LoadIcons(pdf, "images/logos/links.png", constants.LeftMargin, StartOfContactDetails+ContactRowHeight)
+	LoadIcons(pdf, "images/logos/links.png", constants.LeftMargin, StartOfContactDetails+ContactRowHeight, 80, 70)
 	pdf.SetXY(constants.LeftMargin+constants.Hundred+50, FirstContactDetailsFirstValueRowHeight+constants.HundredAndFifty)
 	pdf.SetFontSize(35)
 
@@ -42,7 +42,7 @@ func Website(pdf *gopdf.GoPdf) {
 
 func PhoneNumber(pdf *gopdf.GoPdf) {
 	pdf.SetXY(constants.LeftMargin, StartOfContactDetails)
-	LoadIcons(pdf, "images/logos/phone.png", constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*2))
+	LoadIcons(pdf, "images/logos/phone.png", constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*2), 80, 70)
 	pdf.SetXY(constants.LeftMargin+constants.Hundred+50, FirstContactDetailsFirstValueRowHeight+2*constants.HundredAndFifty)
 	pdf.SetFontSize(35)
 	pdf.SetTextColor(204, 204, 204)
@@ -54,7 +54,7 @@ func PhoneNumber(pdf *gopdf.GoPdf) {
 
 func CurrentLocation(pdf *gopdf.GoPdf) {
 	pdf.SetXY(constants.LeftMargin, StartOfContactDetails)
-	LoadIcons(pdf, "images/logos/location.png", constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*3))
+	LoadIcons(pdf, "images/logos/location.png", constants.LeftMargin, StartOfContactDetails+(ContactRowHeight*3), 80, 70)
 	pdf.SetXY(constants.LeftMargin+constants.Hundred+50, FirstContactDetailsFirstValueRowHeight+3*constants.HundredAndFifty)
 	pdf.SetFontSize(35)
 	pdf.SetTextColor(204, 204, 204)
