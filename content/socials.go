@@ -25,7 +25,8 @@ func Github(pdf *gopdf.GoPdf) {
 	pdf.Text("GitHub")
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, EndOfGithub+constants.HorizontalSpace/3)
-	pdf.SetTextColor(uint8(DarkModePrimaryTextColor.R), uint8(DarkModePrimaryTextColor.G), uint8(DarkModePrimaryTextColor.B))
+	pdf.SetTextColor(uint8(LightModePrimaryTextColor.R), uint8(LightModePrimaryTextColor.G), uint8(LightModePrimaryTextColor.B))
+	// pdf.SetTextColor(uint8(DarkModePrimaryTextColor.R), uint8(DarkModePrimaryTextColor.G), uint8(DarkModePrimaryTextColor.B))
 	pdf.Text("@chiboycalix")
 }
 
@@ -38,7 +39,8 @@ func Linkedin(pdf *gopdf.GoPdf) {
 	pdf.Text("Linkedin")
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, EndOfLinkedin+constants.HorizontalSpace/3)
-	pdf.SetTextColor(uint8(DarkModePrimaryTextColor.R), uint8(DarkModePrimaryTextColor.G), uint8(DarkModePrimaryTextColor.B))
+	pdf.SetTextColor(uint8(LightModePrimaryTextColor.R), uint8(LightModePrimaryTextColor.G), uint8(LightModePrimaryTextColor.B))
+	// pdf.SetTextColor(uint8(DarkModePrimaryTextColor.R), uint8(DarkModePrimaryTextColor.G), uint8(DarkModePrimaryTextColor.B))
 	pdf.Text("igwe-chinonso/")
 }
 
@@ -51,6 +53,7 @@ func Twitter(pdf *gopdf.GoPdf) {
 	pdf.Text("Twitter")
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, EndOfTwitter+constants.HorizontalSpace/3)
-	pdf.SetTextColor(uint8(DarkModePrimaryTextColor.R), uint8(DarkModePrimaryTextColor.G), uint8(DarkModePrimaryTextColor.B))
+	pdf.SetTextColor(uint8(LightModePrimaryTextColor.R), uint8(LightModePrimaryTextColor.G), uint8(LightModePrimaryTextColor.B))
+	// pdf.SetTextColor(uint8(DarkModePrimaryTextColor.R), uint8(DarkModePrimaryTextColor.G), uint8(DarkModePrimaryTextColor.B))
 	pdf.Text("@thorsgardian_")
 }

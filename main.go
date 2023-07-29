@@ -22,7 +22,8 @@ func main() {
 	fmt.Println(DarkModePageBackgroundColor)
 	fmt.Println(LightModePageBackgroundColor)
 	// pdf.SetFillColor(35, 35, 57)
-	pdf.SetFillColor(uint8(DarkModePageBackgroundColor.R), uint8(DarkModePageBackgroundColor.G), uint8(DarkModePageBackgroundColor.B))
+	pdf.SetFillColor(uint8(LightModePageBackgroundColor.R), uint8(LightModePageBackgroundColor.G), uint8(LightModePageBackgroundColor.B))
+	// pdf.SetFillColor(uint8(DarkModePageBackgroundColor.R), uint8(DarkModePageBackgroundColor.G), uint8(DarkModePageBackgroundColor.B))
 	pdf.SetStrokeColor(255, 255, 255)
 	pdf.Rectangle(0, 0, 8000, 8000, "DF", 0, 10)
 

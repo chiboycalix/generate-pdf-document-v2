@@ -44,6 +44,15 @@ func LightModeBoxBackgroundColor() ColorStruct {
 	return c
 }
 
+func LightModePrimaryTextColor() ColorStruct {
+	c := ColorStruct{
+		R: 0,
+		G: 0,
+		B: 0,
+	}
+	return c
+}
+
 func LightModeSecondaryTextColor() ColorStruct {
 	c := ColorStruct{
 		R: 204,

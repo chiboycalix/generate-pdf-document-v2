@@ -13,7 +13,8 @@ func ProfilePicture(pdf *gopdf.GoPdf) {
 }
 
 func FullNameAndJobDescription(pdf *gopdf.GoPdf) {
-	pdf.SetTextColor(uint8(DarkModePrimaryTextColor.R), uint8(DarkModePrimaryTextColor.G), uint8(DarkModePrimaryTextColor.B))
+	pdf.SetTextColor(uint8(LightModePrimaryTextColor.R), uint8(LightModePrimaryTextColor.G), uint8(LightModePrimaryTextColor.B))
+	// pdf.SetTextColor(uint8(DarkModePrimaryTextColor.R), uint8(DarkModePrimaryTextColor.G), uint8(DarkModePrimaryTextColor.B))
 	pdf.SetXY(constants.LeftMargin, StartOfFullName)
 	pdf.SetFontSize(constants.HeaderOne)
 	pdf.Text("Igwe Chinonso")

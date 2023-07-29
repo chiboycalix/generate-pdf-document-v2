@@ -14,7 +14,7 @@ const StartOfEducationSection = StartOfSkillSection * 1.26
 const DotIconHeight = 80
 const DotIconWidth = 80
 
-var LightModeBoxBackgroundColor = constants.LightModeBoxBackgroundColor()
+var LightModePrimaryTextColor = constants.LightModePrimaryTextColor()
 var LightModeSecondaryTextColor = constants.LightModeSecondaryTextColor()
 
 func MainContent(pdf *gopdf.GoPdf) {

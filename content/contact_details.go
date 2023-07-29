@@ -26,7 +26,8 @@ func Email(pdf *gopdf.GoPdf) {
 	pdf.Text("Email")
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, EndOfEmailAddress+constants.HorizontalSpace/3)
-	pdf.SetTextColor(uint8(DarkModePrimaryTextColor.R), uint8(DarkModePrimaryTextColor.G), uint8(DarkModePrimaryTextColor.B))
+	pdf.SetTextColor(uint8(LightModePrimaryTextColor.R), uint8(LightModePrimaryTextColor.G), uint8(LightModePrimaryTextColor.B))
+	// pdf.SetTextColor(uint8(DarkModePrimaryTextColor.R), uint8(DarkModePrimaryTextColor.G), uint8(DarkModePrimaryTextColor.B))
 	pdf.Text("Igwechinonso77@gmail.com")
 
 }
@@ -40,7 +41,8 @@ func Website(pdf *gopdf.GoPdf) {
 	pdf.Text("Website")
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, EndOfWebsite+constants.HorizontalSpace/3)
-	pdf.SetTextColor(uint8(DarkModePrimaryTextColor.R), uint8(DarkModePrimaryTextColor.G), uint8(DarkModePrimaryTextColor.B))
+	pdf.SetTextColor(uint8(LightModePrimaryTextColor.R), uint8(LightModePrimaryTextColor.G), uint8(LightModePrimaryTextColor.B))
+	// pdf.SetTextColor(uint8(DarkModePrimaryTextColor.R), uint8(DarkModePrimaryTextColor.G), uint8(DarkModePrimaryTextColor.B))
 	pdf.Text("https://www.google.com")
 }
 
@@ -54,7 +56,8 @@ func PhoneNumber(pdf *gopdf.GoPdf) {
 	pdf.Text("Phone")
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, EndOfPhoneNumber+constants.HorizontalSpace/3)
-	pdf.SetTextColor(uint8(DarkModePrimaryTextColor.R), uint8(DarkModePrimaryTextColor.G), uint8(DarkModePrimaryTextColor.B))
+	pdf.SetTextColor(uint8(LightModePrimaryTextColor.R), uint8(LightModePrimaryTextColor.G), uint8(LightModePrimaryTextColor.B))
+	// pdf.SetTextColor(uint8(DarkModePrimaryTextColor.R), uint8(DarkModePrimaryTextColor.G), uint8(DarkModePrimaryTextColor.B))
 	pdf.Text("(+234) 816 584 2442")
 }
 
@@ -68,6 +71,7 @@ func CurrentLocation(pdf *gopdf.GoPdf) {
 	pdf.Text("Location")
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, EndOfCurrentLocation+constants.HorizontalSpace/3)
-	pdf.SetTextColor(uint8(DarkModePrimaryTextColor.R), uint8(DarkModePrimaryTextColor.G), uint8(DarkModePrimaryTextColor.B))
+	pdf.SetTextColor(uint8(LightModePrimaryTextColor.R), uint8(LightModePrimaryTextColor.G), uint8(LightModePrimaryTextColor.B))
+	// pdf.SetTextColor(uint8(DarkModePrimaryTextColor.R), uint8(DarkModePrimaryTextColor.G), uint8(DarkModePrimaryTextColor.B))
 	pdf.Text("Lagos, Nigeria")
 }
