@@ -12,25 +12,22 @@ func Experience(pdf *gopdf.GoPdf) {
 	pdf.SetFontSize(constants.HeaderTwo)
 	pdf.Text("Experience")
 
-	// second company
 	SecondCompany(pdf)
-
-	// Bongalow
 	Bongalow(pdf)
-
-	// NIBSS
 	NIBSS(pdf)
 }
 
 func SecondCompany(pdf *gopdf.GoPdf) {
-	utils.LoadImage(pdf, "images/icons/circle.png", MainContentMarginLeft, StartOfExperienceSection+constants.VerticalSpace, constants.SmallImageWidth, constants.SmallImageHeight)
+	// utils.LoadImage(pdf, "images/icons/circle.png", MainContentMarginLeft, StartOfExperienceSection+constants.VerticalSpace, constants.SmallImageWidth, constants.SmallImageHeight)
+	utils.LoadImage(pdf, "images/dark-mode-icons/dot-dark.png", MainContentMarginLeft, StartOfExperienceSection+constants.VerticalSpace, constants.SmallImageWidth, constants.SmallImageHeight)
 
 	pdf.SetXY(MainContentMarginLeft+constants.HorizontalSpace, StartOfExperienceSection+constants.VerticalSpace*1.3)
 	pdf.SetTextColor(uint8(LightModeSecondaryTextColor.R), uint8(LightModeSecondaryTextColor.G), uint8(LightModeSecondaryTextColor.B))
 	pdf.SetFontSize(constants.Paragraph)
 	pdf.Text("Dec 2022 - Present")
 
-	utils.LoadImage(pdf, "images/logos/location.png", MainContentMarginLeft+constants.HorizontalSpace*5, StartOfExperienceSection+constants.VerticalSpace*0.95, constants.SmallImageWidth, constants.SmallImageHeight)
+	// utils.LoadImage(pdf, "images/logos/location.png", MainContentMarginLeft+constants.HorizontalSpace*5, StartOfExperienceSection+constants.VerticalSpace*0.95, constants.SmallImageWidth, constants.SmallImageHeight)
+	utils.LoadImage(pdf, "images/dark-mode-icons/location-dark.png", MainContentMarginLeft+constants.HorizontalSpace*5, StartOfExperienceSection+constants.VerticalSpace*0.95, constants.SmallImageWidth, constants.SmallImageHeight)
 
 	pdf.SetXY(MainContentMarginLeft+constants.HorizontalSpace*5.5, StartOfExperienceSection+constants.VerticalSpace*1.3)
 	pdf.SetFontSize(constants.Paragraph)
@@ -60,12 +57,14 @@ func SecondCompany(pdf *gopdf.GoPdf) {
 }
 
 func Bongalow(pdf *gopdf.GoPdf) {
-	utils.LoadImage(pdf, "images/icons/circle.png", MainContentMarginLeft, StartOfExperienceSection+constants.VerticalSpace*5, constants.SmallImageWidth, constants.SmallImageHeight)
+	// utils.LoadImage(pdf, "images/icons/circle.png", MainContentMarginLeft, StartOfExperienceSection+constants.VerticalSpace*5, constants.SmallImageWidth, constants.SmallImageHeight)
+	utils.LoadImage(pdf, "images/dark-mode-icons/dot-dark.png", MainContentMarginLeft, StartOfExperienceSection+constants.VerticalSpace*5, constants.SmallImageWidth, constants.SmallImageHeight)
 
 	pdf.SetXY(MainContentMarginLeft+constants.HorizontalSpace, StartOfExperienceSection+constants.VerticalSpace*5.3)
 	pdf.Text("Apr 2022 - Nov 2022")
 
-	utils.LoadImage(pdf, "images/logos/location.png", MainContentMarginLeft+constants.HorizontalSpace*5.3, StartOfExperienceSection+constants.VerticalSpace*4.95, constants.SmallImageWidth, constants.SmallImageHeight)
+	// utils.LoadImage(pdf, "images/logos/location.png", MainContentMarginLeft+constants.HorizontalSpace*5.3, StartOfExperienceSection+constants.VerticalSpace*4.95, constants.SmallImageWidth, constants.SmallImageHeight)
+	utils.LoadImage(pdf, "images/dark-mode-icons/location-dark.png", MainContentMarginLeft+constants.HorizontalSpace*5.3, StartOfExperienceSection+constants.VerticalSpace*4.95, constants.SmallImageWidth, constants.SmallImageHeight)
 
 	pdf.SetXY(MainContentMarginLeft+constants.HorizontalSpace*5.8, StartOfExperienceSection+constants.VerticalSpace*5.3)
 	pdf.SetFontSize(constants.Paragraph)
@@ -96,12 +95,14 @@ func Bongalow(pdf *gopdf.GoPdf) {
 }
 
 func NIBSS(pdf *gopdf.GoPdf) {
-	utils.LoadImage(pdf, "images/icons/circle.png", MainContentMarginLeft, StartOfExperienceSection+constants.VerticalSpace*9, constants.SmallImageWidth, constants.SmallImageHeight)
+	// utils.LoadImage(pdf, "images/icons/circle.png", MainContentMarginLeft, StartOfExperienceSection+constants.VerticalSpace*9, constants.SmallImageWidth, constants.SmallImageHeight)
+	utils.LoadImage(pdf, "images/dark-mode-icons/dot-dark.png", MainContentMarginLeft, StartOfExperienceSection+constants.VerticalSpace*9, constants.SmallImageWidth, constants.SmallImageHeight)
 
 	pdf.SetXY(MainContentMarginLeft+constants.HorizontalSpace, StartOfExperienceSection+constants.VerticalSpace*9.3)
 	pdf.Text("Dec 2019 - Mar 2022")
 
-	utils.LoadImage(pdf, "images/logos/location.png", MainContentMarginLeft+constants.HorizontalSpace*5.3, StartOfExperienceSection+constants.VerticalSpace*8.95, constants.SmallImageWidth, constants.SmallImageHeight)
+	// utils.LoadImage(pdf, "images/logos/location.png", MainContentMarginLeft+constants.HorizontalSpace*5.3, StartOfExperienceSection+constants.VerticalSpace*8.95, constants.SmallImageWidth, constants.SmallImageHeight)
+	utils.LoadImage(pdf, "images/dark-mode-icons/location-dark.png", MainContentMarginLeft+constants.HorizontalSpace*5.3, StartOfExperienceSection+constants.VerticalSpace*8.95, constants.SmallImageWidth, constants.SmallImageHeight)
 
 	pdf.SetXY(MainContentMarginLeft+constants.HorizontalSpace*5.8, StartOfExperienceSection+constants.VerticalSpace*9.3)
 	pdf.SetFontSize(constants.Paragraph)

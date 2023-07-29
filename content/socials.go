@@ -15,7 +15,8 @@ func Socials(pdf *gopdf.GoPdf) {
 }
 
 func Github(pdf *gopdf.GoPdf) {
-	utils.LoadImage(pdf, "images/socials/github.png", constants.LeftMargin, StartOfGithub, IconWidth, IconHeight)
+	// utils.LoadImage(pdf, "images/socials/github.png", constants.LeftMargin, StartOfGithub, IconWidth, IconHeight)
+	utils.LoadImage(pdf, "images/dark-mode-icons/github-dark.png", constants.LeftMargin, StartOfGithub, IconWidth, IconHeight)
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, StartOfGithub+50)
 	pdf.SetFontSize(constants.Paragraph)

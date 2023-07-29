@@ -17,7 +17,8 @@ func ContactDetails(pdf *gopdf.GoPdf) {
 }
 
 func Email(pdf *gopdf.GoPdf) {
-	utils.LoadImage(pdf, "images/logos/mail.png", constants.LeftMargin, StartOfContactSection, IconWidth, IconHeight)
+	// utils.LoadImage(pdf, "images/logos/mail.png", constants.LeftMargin, StartOfContactSection, IconWidth, IconHeight)
+	utils.LoadImage(pdf, "images/dark-mode-icons/mail-dark.png", constants.LeftMargin, StartOfContactSection, IconWidth, IconHeight)
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, StartOfEmailAddress+50)
 	pdf.SetFontSize(constants.Paragraph)
@@ -31,7 +32,8 @@ func Email(pdf *gopdf.GoPdf) {
 }
 
 func Website(pdf *gopdf.GoPdf) {
-	utils.LoadImage(pdf, "images/logos/links.png", constants.LeftMargin, StartOfWebsite, IconWidth, IconHeight)
+	// utils.LoadImage(pdf, "images/logos/links.png", constants.LeftMargin, StartOfWebsite, IconWidth, IconHeight)
+	utils.LoadImage(pdf, "images/dark-mode-icons/link-dark.png", constants.LeftMargin, StartOfWebsite, IconWidth, IconHeight)
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, StartOfWebsite+50)
 	pdf.SetTextColor(uint8(DarkModeSecondaryTextColor.R), uint8(DarkModeSecondaryTextColor.G), uint8(DarkModeSecondaryTextColor.B))
@@ -43,7 +45,8 @@ func Website(pdf *gopdf.GoPdf) {
 }
 
 func PhoneNumber(pdf *gopdf.GoPdf) {
-	utils.LoadImage(pdf, "images/logos/phone.png", constants.LeftMargin, StartOfPhoneNumber, IconWidth, IconHeight)
+	// utils.LoadImage(pdf, "images/logos/phone.png", constants.LeftMargin, StartOfPhoneNumber, IconWidth, IconHeight)
+	utils.LoadImage(pdf, "images/dark-mode-icons/phone-dark.png", constants.LeftMargin, StartOfPhoneNumber, IconWidth, IconHeight)
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, StartOfPhoneNumber+50)
 	pdf.SetFontSize(constants.Paragraph)
@@ -56,7 +59,8 @@ func PhoneNumber(pdf *gopdf.GoPdf) {
 }
 
 func CurrentLocation(pdf *gopdf.GoPdf) {
-	utils.LoadImage(pdf, "images/logos/location.png", constants.LeftMargin, StartOfCurrentLocation, IconWidth, IconHeight)
+	// utils.LoadImage(pdf, "images/dark-mode-icons/location-dark.png", constants.LeftMargin, StartOfCurrentLocation, IconWidth, IconHeight)
+	utils.LoadImage(pdf, "images/dark-mode-icons/location-dark.png", constants.LeftMargin, StartOfCurrentLocation, IconWidth, IconHeight)
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, StartOfCurrentLocation+50)
 	pdf.SetFontSize(constants.Paragraph)
