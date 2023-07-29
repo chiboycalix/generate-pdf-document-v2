@@ -16,10 +16,10 @@ func LatestProjects(pdf *gopdf.GoPdf) {
 	pdf.SetTextColor(0, 0, 0)
 	pdf.Text("Latest Projects")
 
-	pdf.SetFillColor(225, 231, 254)
+	pdf.SetFillColor(246, 249, 252)
 	pdf.Rectangle(MainContentMarginLeft, StartOfProject, MainContentMarginLeft*2.25, StartOfProject*1.5, "DF", 50, 10)
 
-	pdf.SetFillColor(225, 231, 254)
+	pdf.SetFillColor(246, 249, 252)
 	pdf.Rectangle(MainContentMarginLeft*2.3, StartOfProject, MainContentMarginLeft*3.55, StartOfProject*1.5, "DF", 50, 10)
 
 }
