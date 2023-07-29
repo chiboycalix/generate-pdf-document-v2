@@ -18,9 +18,11 @@ func main() {
 	pdf.AddPage()
 	utils.LoadFonts(&pdf)
 	DarkModePageBackgroundColor := constants.DarkModePageBackgroundColor()
+	LightModePageBackgroundColor := constants.LightModePageBackgroundColor()
 	fmt.Println(DarkModePageBackgroundColor)
-	pdf.SetFillColor(35, 35, 57)
-	// pdf.SetFillColor(uint8(DarkModePageBackgroundColor.R), uint8(DarkModePageBackgroundColor.G), uint8(DarkModePageBackgroundColor.B))
+	fmt.Println(LightModePageBackgroundColor)
+	// pdf.SetFillColor(35, 35, 57)
+	pdf.SetFillColor(uint8(DarkModePageBackgroundColor.R), uint8(DarkModePageBackgroundColor.G), uint8(DarkModePageBackgroundColor.B))
 	pdf.SetStrokeColor(255, 255, 255)
 	pdf.Rectangle(0, 0, 8000, 8000, "DF", 0, 10)
 

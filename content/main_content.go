@@ -17,8 +17,6 @@ const DotIconWidth = 80
 var LightModeBoxBackgroundColor = constants.LightModeBoxBackgroundColor()
 var LightModeSecondaryTextColor = constants.LightModeSecondaryTextColor()
 
-var DarkModeBoxBackgroundColor = constants.DarkModeBoxBackgroundColor()
-
 func MainContent(pdf *gopdf.GoPdf) {
 	Experience(pdf)
 	LatestProjects(pdf)

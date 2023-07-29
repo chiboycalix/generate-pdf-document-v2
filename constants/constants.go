@@ -26,6 +26,15 @@ type ColorStruct struct {
 	B float64
 }
 
+func LightModePageBackgroundColor() ColorStruct {
+	c := ColorStruct{
+		R: 255,
+		G: 255,
+		B: 255,
+	}
+	return c
+}
+
 func LightModeBoxBackgroundColor() ColorStruct {
 	c := ColorStruct{
 		R: 246,
@@ -49,15 +58,6 @@ func DarkModePageBackgroundColor() ColorStruct {
 		R: 35,
 		G: 35,
 		B: 37,
-	}
-	return c
-}
-
-func DarkModeBoxBackgroundColor() ColorStruct {
-	c := ColorStruct{
-		R: 46,
-		G: 46,
-		B: 72,
 	}
 	return c
 }

@@ -23,7 +23,7 @@ func Skills(pdf *gopdf.GoPdf) {
 
 func Javascript(pdf *gopdf.GoPdf) {
 	// pdf.SetFillColor(uint8(BackgroundColor.R), uint8(BackgroundColor.G), uint8(BackgroundColor.B))
-	pdf.SetFillColor(uint8(DarkModeBoxBackgroundColor.R), uint8(DarkModeBoxBackgroundColor.G), uint8(DarkModeBoxBackgroundColor.B))
+	pdf.SetFillColor(uint8(DarkModePageBackgroundColor.R), uint8(DarkModePageBackgroundColor.G), uint8(DarkModePageBackgroundColor.B))
 	pdf.Rectangle(MainContentMarginLeft, StartOfSkillSection*1.04, MainContentMarginLeft*1.5, StartOfSkillSection*1.1, "DF", 50, 10)
 
 	pdf.SetXY(MainContentMarginLeft*1.12, StartOfSkillSection*1.08)
@@ -31,7 +31,7 @@ func Javascript(pdf *gopdf.GoPdf) {
 }
 func TypeScript(pdf *gopdf.GoPdf) {
 	// pdf.SetFillColor(uint8(BackgroundColor.R), uint8(BackgroundColor.G), uint8(BackgroundColor.B))
-	pdf.SetFillColor(uint8(DarkModeBoxBackgroundColor.R), uint8(DarkModeBoxBackgroundColor.G), uint8(DarkModeBoxBackgroundColor.B))
+	pdf.SetFillColor(uint8(DarkModePageBackgroundColor.R), uint8(DarkModePageBackgroundColor.G), uint8(DarkModePageBackgroundColor.B))
 	pdf.Rectangle(MainContentMarginLeft*1.65, StartOfSkillSection*1.04, MainContentMarginLeft*2.15, StartOfSkillSection*1.1, "DF", 50, 10)
 
 	pdf.SetXY(MainContentMarginLeft*1.77, StartOfSkillSection*1.08)
@@ -39,7 +39,7 @@ func TypeScript(pdf *gopdf.GoPdf) {
 }
 func NodeJs(pdf *gopdf.GoPdf) {
 	// pdf.SetFillColor(uint8(BackgroundColor.R), uint8(BackgroundColor.G), uint8(BackgroundColor.B))
-	pdf.SetFillColor(uint8(DarkModeBoxBackgroundColor.R), uint8(DarkModeBoxBackgroundColor.G), uint8(DarkModeBoxBackgroundColor.B))
+	pdf.SetFillColor(uint8(DarkModePageBackgroundColor.R), uint8(DarkModePageBackgroundColor.G), uint8(DarkModePageBackgroundColor.B))
 	pdf.Rectangle(MainContentMarginLeft*2.35, StartOfSkillSection*1.04, MainContentMarginLeft*2.85, StartOfSkillSection*1.1, "DF", 50, 10)
 
 	pdf.SetXY(MainContentMarginLeft*2.50, StartOfSkillSection*1.08)
@@ -47,7 +47,7 @@ func NodeJs(pdf *gopdf.GoPdf) {
 }
 func ReactJs(pdf *gopdf.GoPdf) {
 	// pdf.SetFillColor(uint8(BackgroundColor.R), uint8(BackgroundColor.G), uint8(BackgroundColor.B))
-	pdf.SetFillColor(uint8(DarkModeBoxBackgroundColor.R), uint8(DarkModeBoxBackgroundColor.G), uint8(DarkModeBoxBackgroundColor.B))
+	pdf.SetFillColor(uint8(DarkModePageBackgroundColor.R), uint8(DarkModePageBackgroundColor.G), uint8(DarkModePageBackgroundColor.B))
 	pdf.Rectangle(MainContentMarginLeft*3.05, StartOfSkillSection*1.04, MainContentMarginLeft*3.55, StartOfSkillSection*1.1, "DF", 50, 10)
 
 	pdf.SetXY(MainContentMarginLeft*3.20, StartOfSkillSection*1.08)
@@ -55,7 +55,7 @@ func ReactJs(pdf *gopdf.GoPdf) {
 }
 func Redux(pdf *gopdf.GoPdf) {
 	// pdf.SetFillColor(uint8(BackgroundColor.R), uint8(BackgroundColor.G), uint8(BackgroundColor.B))
-	pdf.SetFillColor(uint8(DarkModeBoxBackgroundColor.R), uint8(DarkModeBoxBackgroundColor.G), uint8(DarkModeBoxBackgroundColor.B))
+	pdf.SetFillColor(uint8(DarkModePageBackgroundColor.R), uint8(DarkModePageBackgroundColor.G), uint8(DarkModePageBackgroundColor.B))
 	pdf.Rectangle(MainContentMarginLeft, StartOfSkillSection*1.13, MainContentMarginLeft*1.5, StartOfSkillSection*1.19, "DF", 50, 10)
 
 	pdf.SetXY(MainContentMarginLeft*1.15, StartOfSkillSection*1.17)
@@ -63,7 +63,7 @@ func Redux(pdf *gopdf.GoPdf) {
 }
 func NextJs(pdf *gopdf.GoPdf) {
 	// pdf.SetFillColor(uint8(BackgroundColor.R), uint8(BackgroundColor.G), uint8(BackgroundColor.B))
-	pdf.SetFillColor(uint8(DarkModeBoxBackgroundColor.R), uint8(DarkModeBoxBackgroundColor.G), uint8(DarkModeBoxBackgroundColor.B))
+	pdf.SetFillColor(uint8(DarkModePageBackgroundColor.R), uint8(DarkModePageBackgroundColor.G), uint8(DarkModePageBackgroundColor.B))
 	pdf.Rectangle(MainContentMarginLeft*1.65, StartOfSkillSection*1.13, MainContentMarginLeft*2.15, StartOfSkillSection*1.19, "DF", 50, 10)
 
 	pdf.SetXY(MainContentMarginLeft*1.80, StartOfSkillSection*1.17)
@@ -71,7 +71,7 @@ func NextJs(pdf *gopdf.GoPdf) {
 }
 func Tailwind(pdf *gopdf.GoPdf) {
 	// pdf.SetFillColor(uint8(BackgroundColor.R), uint8(BackgroundColor.G), uint8(BackgroundColor.B))
-	pdf.SetFillColor(uint8(DarkModeBoxBackgroundColor.R), uint8(DarkModeBoxBackgroundColor.G), uint8(DarkModeBoxBackgroundColor.B))
+	pdf.SetFillColor(uint8(DarkModePageBackgroundColor.R), uint8(DarkModePageBackgroundColor.G), uint8(DarkModePageBackgroundColor.B))
 	pdf.Rectangle(MainContentMarginLeft*2.35, StartOfSkillSection*1.13, MainContentMarginLeft*2.85, StartOfSkillSection*1.19, "DF", 50, 10)
 
 	pdf.SetXY(MainContentMarginLeft*2.50, StartOfSkillSection*1.17)
@@ -79,21 +79,9 @@ func Tailwind(pdf *gopdf.GoPdf) {
 }
 func Golang(pdf *gopdf.GoPdf) {
 	// pdf.SetFillColor(uint8(BackgroundColor.R), uint8(BackgroundColor.G), uint8(BackgroundColor.B))
-	pdf.SetFillColor(uint8(DarkModeBoxBackgroundColor.R), uint8(DarkModeBoxBackgroundColor.G), uint8(DarkModeBoxBackgroundColor.B))
+	pdf.SetFillColor(uint8(DarkModePageBackgroundColor.R), uint8(DarkModePageBackgroundColor.G), uint8(DarkModePageBackgroundColor.B))
 	pdf.Rectangle(MainContentMarginLeft*3.05, StartOfSkillSection*1.13, MainContentMarginLeft*3.55, StartOfSkillSection*1.19, "DF", 50, 10)
 
 	pdf.SetXY(MainContentMarginLeft*3.20, StartOfSkillSection*1.17)
 	pdf.Text("Golang.")
-}
-func HTMLCSS(pdf *gopdf.GoPdf) {
-
-}
-func Git(pdf *gopdf.GoPdf) {
-
-}
-func MongoDB(pdf *gopdf.GoPdf) {
-
-}
-func PostGres(pdf *gopdf.GoPdf) {
-
 }

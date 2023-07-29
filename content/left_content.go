@@ -53,6 +53,8 @@ const IconWidth = 180
 const IconHeight = 170
 const ContactRowHeight = constants.Hundred * 1.5
 
+var DarkModePageBackgroundColor = constants.DarkModePageBackgroundColor()
+
 func LeftContent(pdf *gopdf.GoPdf) {
 	ProfilePicture(pdf)
 	FullNameAndJobDescription(pdf)
