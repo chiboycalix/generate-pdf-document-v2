@@ -19,3 +19,27 @@ const Paragraph = 90
 
 const SmallImageWidth = 80
 const SmallImageHeight = 80
+
+type ColorStruct struct {
+	R float64
+	G float64
+	B float64
+}
+
+func SecondaryBackground() ColorStruct {
+	c := ColorStruct{
+		R: 246,
+		G: 249,
+		B: 252,
+	}
+	return c
+}
+
+func SecondaryText() ColorStruct {
+	c := ColorStruct{
+		R: 204,
+		G: 204,
+		B: 204,
+	}
+	return c
+}

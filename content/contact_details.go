@@ -18,7 +18,7 @@ func Email(pdf *gopdf.GoPdf) {
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, StartOfEmailAddress+50)
 	pdf.SetFontSize(constants.Paragraph)
-	pdf.SetTextColor(204, 204, 204)
+	pdf.SetTextColor(uint8(SecondaryTextColor.R), uint8(SecondaryTextColor.G), uint8(SecondaryTextColor.B))
 	// pdf.SetTextColor(121, 129, 154)
 	pdf.Text("Email")
 
@@ -32,7 +32,7 @@ func Website(pdf *gopdf.GoPdf) {
 	utils.LoadImage(pdf, "images/logos/links.png", constants.LeftMargin, StartOfWebsite, IconWidth, IconHeight)
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, StartOfWebsite+50)
-	pdf.SetTextColor(204, 204, 204)
+	pdf.SetTextColor(uint8(SecondaryTextColor.R), uint8(SecondaryTextColor.G), uint8(SecondaryTextColor.B))
 	pdf.Text("Website")
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, EndOfWebsite+constants.HorizontalSpace/3)
@@ -45,7 +45,7 @@ func PhoneNumber(pdf *gopdf.GoPdf) {
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, StartOfPhoneNumber+50)
 	pdf.SetFontSize(constants.Paragraph)
-	pdf.SetTextColor(204, 204, 204)
+	pdf.SetTextColor(uint8(SecondaryTextColor.R), uint8(SecondaryTextColor.G), uint8(SecondaryTextColor.B))
 	pdf.Text("Phone")
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, EndOfPhoneNumber+constants.HorizontalSpace/3)
@@ -58,7 +58,7 @@ func CurrentLocation(pdf *gopdf.GoPdf) {
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, StartOfCurrentLocation+50)
 	pdf.SetFontSize(constants.Paragraph)
-	pdf.SetTextColor(204, 204, 204)
+	pdf.SetTextColor(uint8(SecondaryTextColor.R), uint8(SecondaryTextColor.G), uint8(SecondaryTextColor.B))
 	pdf.Text("Location")
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, EndOfCurrentLocation+constants.HorizontalSpace/3)

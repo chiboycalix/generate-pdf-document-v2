@@ -5,6 +5,7 @@ import (
 	"github.com/signintech/gopdf"
 )
 
+// ProfilePicture Section
 const StartOfProfilePicture = constants.TopMargin
 const StartOfFullName = StartOfProfilePicture + constants.ProfilePictureHeight + constants.VerticalSpace
 const StartOfJobTitle = StartOfFullName + constants.VerticalSpace
@@ -64,14 +65,7 @@ func LeftContent(pdf *gopdf.GoPdf) {
 }
 
 func HorizontalDivider(pdf *gopdf.GoPdf, top float64) {
-	pdf.SetStrokeColor(204, 204, 204)
+	pdf.SetStrokeColor(uint8(SecondaryTextColor.R), uint8(SecondaryTextColor.G), uint8(SecondaryTextColor.B))
 	pdf.SetLineWidth(1)
 	pdf.Line(constants.LeftMargin, top, constants.LeftContentWidth-constants.RightMargin, top)
 }
-
-// func LoadIcons(pdf *gopdf.GoPdf, iconPath string, leftMargin float64, topMargin float64, width float64, height float64) {
-// 	pdf.Image(iconPath, leftMargin, topMargin, &gopdf.Rect{
-// 		W: width,
-// 		H: height,
-// 	})
-// }

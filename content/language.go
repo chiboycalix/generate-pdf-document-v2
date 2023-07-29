@@ -19,7 +19,7 @@ func UnitedKingdom(pdf *gopdf.GoPdf) {
 
 	pdf.SetXY(StartOfEnglishX, StartOfEnglishY+50)
 	pdf.SetFontSize(constants.Paragraph)
-	pdf.SetTextColor(204, 204, 204)
+	pdf.SetTextColor(uint8(SecondaryTextColor.R), uint8(SecondaryTextColor.G), uint8(SecondaryTextColor.B))
 	pdf.Text("English")
 
 	pdf.SetXY(EndOfEnglishX, EndOfEnglishY)
@@ -32,7 +32,7 @@ func Nigeria(pdf *gopdf.GoPdf) {
 
 	pdf.SetXY(StartOfIgboX, StartOfIgboY+50)
 	pdf.SetFontSize(constants.Paragraph)
-	pdf.SetTextColor(204, 204, 204)
+	pdf.SetTextColor(uint8(SecondaryTextColor.R), uint8(SecondaryTextColor.G), uint8(SecondaryTextColor.B))
 	pdf.Text("Igbo")
 
 	pdf.SetXY(EndOfIgboX, EndOfIgboY)
@@ -45,7 +45,7 @@ func Germany(pdf *gopdf.GoPdf) {
 
 	pdf.SetXY(StartOfGermanX, StartOfGermanY+50)
 	pdf.SetFontSize(constants.Paragraph)
-	pdf.SetTextColor(204, 204, 204)
+	pdf.SetTextColor(uint8(SecondaryTextColor.R), uint8(SecondaryTextColor.G), uint8(SecondaryTextColor.B))
 	pdf.Text("German")
 
 	pdf.SetXY(EndOfGermanX, EndOfGermanY)

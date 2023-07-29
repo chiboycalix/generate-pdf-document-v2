@@ -25,7 +25,7 @@ func SecondCompany(pdf *gopdf.GoPdf) {
 	utils.LoadImage(pdf, "images/icons/circle.png", MainContentMarginLeft, StartOfExperienceSection+constants.VerticalSpace, constants.SmallImageWidth, constants.SmallImageHeight)
 
 	pdf.SetXY(MainContentMarginLeft+constants.HorizontalSpace, StartOfExperienceSection+constants.VerticalSpace*1.3)
-	pdf.SetTextColor(204, 204, 204)
+	pdf.SetTextColor(uint8(SecondaryTextColor.R), uint8(SecondaryTextColor.G), uint8(SecondaryTextColor.B))
 	pdf.SetFontSize(constants.Paragraph)
 	pdf.Text("Dec 2022 - Present")
 
@@ -45,7 +45,7 @@ func SecondCompany(pdf *gopdf.GoPdf) {
 	pdf.Text("Second Company")
 
 	pdf.SetXY(MainContentMarginLeft+constants.HorizontalSpace*13, StartOfExperienceSection+constants.VerticalSpace*1.3)
-	pdf.SetTextColor(204, 204, 204)
+	pdf.SetTextColor(uint8(SecondaryTextColor.R), uint8(SecondaryTextColor.G), uint8(SecondaryTextColor.B))
 	pdf.Text("o. Improve website responsiveness across devices of all screens")
 
 	pdf.SetXY(MainContentMarginLeft+constants.HorizontalSpace*13, StartOfExperienceSection+constants.VerticalSpace*2.0)
@@ -80,7 +80,7 @@ func Bongalow(pdf *gopdf.GoPdf) {
 	pdf.Text("Bongalow (Techstars ‘22)")
 
 	pdf.SetXY(MainContentMarginLeft+constants.HorizontalSpace*13, StartOfExperienceSection+constants.VerticalSpace*5)
-	pdf.SetTextColor(204, 204, 204)
+	pdf.SetTextColor(uint8(SecondaryTextColor.R), uint8(SecondaryTextColor.G), uint8(SecondaryTextColor.B))
 	pdf.Text("o. Improve website responsiveness across devices of all screens")
 
 	pdf.SetXY(MainContentMarginLeft+constants.HorizontalSpace*13, StartOfExperienceSection+constants.VerticalSpace*5.7)
@@ -116,7 +116,7 @@ func NIBSS(pdf *gopdf.GoPdf) {
 	pdf.Text("Nigeria Interbank Settlement Systems")
 
 	pdf.SetXY(MainContentMarginLeft+constants.HorizontalSpace*13, StartOfExperienceSection+constants.VerticalSpace*9.3)
-	pdf.SetTextColor(204, 204, 204)
+	pdf.SetTextColor(uint8(SecondaryTextColor.R), uint8(SecondaryTextColor.G), uint8(SecondaryTextColor.B))
 	pdf.Text("o. Improve website responsiveness across devices of all screens")
 
 	pdf.SetXY(MainContentMarginLeft+constants.HorizontalSpace*13, StartOfExperienceSection+constants.VerticalSpace*10)

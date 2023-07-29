@@ -9,10 +9,13 @@ const StartOfExperienceSection = constants.TopMargin * 1.5
 const MainContentMarginLeft = constants.LeftContentWidth * 1.1
 
 const StartOfLatestProjectsSection = StartOfExperienceSection * 10
-const StartOfSkillSection = StartOfLatestProjectsSection * 1.75
+const StartOfSkillSection = StartOfLatestProjectsSection * 1.73
 const StartOfEducationSection = StartOfSkillSection * 1.26
 const DotIconHeight = 80
 const DotIconWidth = 80
+
+var BackgroundColor = constants.SecondaryBackground()
+var SecondaryTextColor = constants.SecondaryText()
 
 func MainContent(pdf *gopdf.GoPdf) {
 	Experience(pdf)

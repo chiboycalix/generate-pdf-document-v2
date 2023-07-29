@@ -19,7 +19,7 @@ func Github(pdf *gopdf.GoPdf) {
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, StartOfGithub+50)
 	pdf.SetFontSize(constants.Paragraph)
-	pdf.SetTextColor(204, 204, 204)
+	pdf.SetTextColor(uint8(SecondaryTextColor.R), uint8(SecondaryTextColor.G), uint8(SecondaryTextColor.B))
 
 	pdf.Text("GitHub")
 
@@ -33,7 +33,7 @@ func Linkedin(pdf *gopdf.GoPdf) {
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, StartOfLinkedin+50)
 	pdf.SetFontSize(constants.Paragraph)
-	pdf.SetTextColor(204, 204, 204)
+	pdf.SetTextColor(uint8(SecondaryTextColor.R), uint8(SecondaryTextColor.G), uint8(SecondaryTextColor.B))
 	pdf.Text("Linkedin")
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, EndOfLinkedin+constants.HorizontalSpace/3)
@@ -46,7 +46,7 @@ func Twitter(pdf *gopdf.GoPdf) {
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, StartOfTwitter+50)
 	pdf.SetFontSize(constants.Paragraph)
-	pdf.SetTextColor(204, 204, 204)
+	pdf.SetTextColor(uint8(SecondaryTextColor.R), uint8(SecondaryTextColor.G), uint8(SecondaryTextColor.B))
 	pdf.Text("Twitter")
 
 	pdf.SetXY(constants.LeftMargin+constants.HorizontalSpace*1.3, EndOfTwitter+constants.HorizontalSpace/3)
