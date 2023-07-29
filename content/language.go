@@ -19,11 +19,11 @@ func UnitedKingdom(pdf *gopdf.GoPdf) {
 
 	pdf.SetXY(StartOfEnglishX, StartOfEnglishY+50)
 	pdf.SetFontSize(constants.Paragraph)
-	pdf.SetTextColor(uint8(SecondaryTextColor.R), uint8(SecondaryTextColor.G), uint8(SecondaryTextColor.B))
+	pdf.SetTextColor(uint8(DarkModeSecondaryTextColor.R), uint8(DarkModeSecondaryTextColor.G), uint8(DarkModeSecondaryTextColor.B))
 	pdf.Text("English")
 
 	pdf.SetXY(EndOfEnglishX, EndOfEnglishY)
-	pdf.SetTextColor(0, 0, 0)
+	pdf.SetTextColor(uint8(DarkModePrimaryTextColor.R), uint8(DarkModePrimaryTextColor.G), uint8(DarkModePrimaryTextColor.B))
 	pdf.Text("Proficient")
 }
 
@@ -32,11 +32,11 @@ func Nigeria(pdf *gopdf.GoPdf) {
 
 	pdf.SetXY(StartOfIgboX, StartOfIgboY+50)
 	pdf.SetFontSize(constants.Paragraph)
-	pdf.SetTextColor(uint8(SecondaryTextColor.R), uint8(SecondaryTextColor.G), uint8(SecondaryTextColor.B))
+	pdf.SetTextColor(uint8(DarkModeSecondaryTextColor.R), uint8(DarkModeSecondaryTextColor.G), uint8(DarkModeSecondaryTextColor.B))
 	pdf.Text("Igbo")
 
 	pdf.SetXY(EndOfIgboX, EndOfIgboY)
-	pdf.SetTextColor(0, 0, 0)
+	pdf.SetTextColor(uint8(DarkModePrimaryTextColor.R), uint8(DarkModePrimaryTextColor.G), uint8(DarkModePrimaryTextColor.B))
 	pdf.Text("Native")
 }
 
@@ -45,10 +45,10 @@ func Germany(pdf *gopdf.GoPdf) {
 
 	pdf.SetXY(StartOfGermanX, StartOfGermanY+50)
 	pdf.SetFontSize(constants.Paragraph)
-	pdf.SetTextColor(uint8(SecondaryTextColor.R), uint8(SecondaryTextColor.G), uint8(SecondaryTextColor.B))
+	pdf.SetTextColor(uint8(DarkModeSecondaryTextColor.R), uint8(DarkModeSecondaryTextColor.G), uint8(DarkModeSecondaryTextColor.B))
 	pdf.Text("German")
 
 	pdf.SetXY(EndOfGermanX, EndOfGermanY)
-	pdf.SetTextColor(0, 0, 0)
+	pdf.SetTextColor(uint8(DarkModePrimaryTextColor.R), uint8(DarkModePrimaryTextColor.G), uint8(DarkModePrimaryTextColor.B))
 	pdf.Text("Beginner")
 }

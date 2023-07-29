@@ -65,7 +65,7 @@ func LeftContent(pdf *gopdf.GoPdf) {
 }
 
 func HorizontalDivider(pdf *gopdf.GoPdf, top float64) {
-	pdf.SetStrokeColor(uint8(SecondaryTextColor.R), uint8(SecondaryTextColor.G), uint8(SecondaryTextColor.B))
+	pdf.SetStrokeColor(uint8(LightModeSecondaryTextColor.R), uint8(LightModeSecondaryTextColor.G), uint8(LightModeSecondaryTextColor.B))
 	pdf.SetLineWidth(1)
 	pdf.Line(constants.LeftMargin, top, constants.LeftContentWidth-constants.RightMargin, top)
 }

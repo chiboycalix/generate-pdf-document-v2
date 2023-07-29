@@ -26,7 +26,7 @@ type ColorStruct struct {
 	B float64
 }
 
-func SecondaryBackground() ColorStruct {
+func LightModeBoxBackgroundColor() ColorStruct {
 	c := ColorStruct{
 		R: 246,
 		G: 249,
@@ -35,11 +35,47 @@ func SecondaryBackground() ColorStruct {
 	return c
 }
 
-func SecondaryText() ColorStruct {
+func LightModeSecondaryTextColor() ColorStruct {
 	c := ColorStruct{
 		R: 204,
 		G: 204,
 		B: 204,
+	}
+	return c
+}
+
+func DarkModePageBackgroundColor() ColorStruct {
+	c := ColorStruct{
+		R: 35,
+		G: 35,
+		B: 37,
+	}
+	return c
+}
+
+func DarkModeBoxBackgroundColor() ColorStruct {
+	c := ColorStruct{
+		R: 46,
+		G: 46,
+		B: 72,
+	}
+	return c
+}
+
+func DarkModePrimaryTextColor() ColorStruct {
+	c := ColorStruct{
+		R: 255,
+		G: 255,
+		B: 255,
+	}
+	return c
+}
+
+func DarkModeSecondaryTextColor() ColorStruct {
+	c := ColorStruct{
+		R: 172,
+		G: 177,
+		B: 195,
 	}
 	return c
 }

@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/chiboycalix/html-to-pdf/constants"
 	"github.com/chiboycalix/html-to-pdf/content"
 	"github.com/chiboycalix/html-to-pdf/utils"
@@ -15,6 +17,12 @@ func main() {
 	}})
 	pdf.AddPage()
 	utils.LoadFonts(&pdf)
+	DarkModePageBackgroundColor := constants.DarkModePageBackgroundColor()
+	fmt.Println(DarkModePageBackgroundColor)
+	pdf.SetFillColor(35, 35, 57)
+	// pdf.SetFillColor(uint8(DarkModePageBackgroundColor.R), uint8(DarkModePageBackgroundColor.G), uint8(DarkModePageBackgroundColor.B))
+	pdf.SetStrokeColor(255, 255, 255)
+	pdf.Rectangle(0, 0, 8000, 8000, "DF", 0, 10)
 
 	content.LeftContent(&pdf)
 	content.MainContent(&pdf)
